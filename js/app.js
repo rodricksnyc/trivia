@@ -99,9 +99,6 @@ $("#boxFour").click(function() {
 		checkAnswer(); }
 });
 
-$(".btn").mouseup(function() {
-	$(this).blur();
-});
 
 
 function nextQuestion() {
@@ -127,22 +124,20 @@ function nextQuestion() {
 
 
 function timer () {
-	intervalId = setInterval(count, 10);
+	intervalId = setInterval(count, 20);
 }
 
 
 function count () {
 	if (time === 0) { clearInterval(intervalId);
 					  unanswered++;
-					  timerExp = 1;
 					  checkAnswer(); }
-	else if (time % 100 === 0) { $("#timer").html(time/100); }
+	else if (time % 100 === 0) { $("#timer").html(time/200); }
 	time--;
 }
 
 function checkAnswer() {
 	clearInterval(intervalId);
-	$("#timer").html("");
 	if (pointsEnabled === 0) { $("#pointsEarned").hide(); }
 	else { $("#pointsEarned").show(); }
 	if (guess === answers[i]) {	$(".bg-success").fadeIn();
@@ -155,8 +150,6 @@ function checkAnswer() {
 			$("#pointsEarned").css("color", "red");
 			$("#pointsEarned").html("You lost -" + time + " points for that question.");
 			totalPointsEarned = totalPointsEarned - time;
-			$(".bg-danger").fadeIn();
-
 
 			if (timerExp === 0) { losses++; }
 			timerExp = 0;
