@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TOTALLY TRIVIA</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css"
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<h1><div class="col-lg-12 text-center chooseGame"><p>Click on Geography to receive trivia questions about world Geography </p></h4>
+		</div></h1>
+	</div>
+<div class="container">
+	<div class="row">
+		<button class="col-lg-12 col-md-12 col-sm-12 btn btn-danger" id="pointsMode">Score</button>
+		<button class="col-lg-12 col-md-12 col-sm-12 btn btn-primary chooseGame" id="geography">Geography</button>
+	</div>
+</div>
+
+<h3 class="pointsArea" id="pointsActivated">Points Score
+<span class="pointsArea" id="pointsEarned"></h3>
+
+<div class="col-lg-2 text-center" id="timer"></div>
+
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center begin"><h3><span id="questionArea"></span></h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
+			<button class="btn btn-info" id="boxOne"></button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
+			<button class="btn btn-info" id="boxTwo"></button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
+			<button class="btn btn-info" id="boxThree"></button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
+			<button class="btn btn-info" id="boxFour"></button>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<h1 class="bg-success text-center answerConfirmation">Correct Answer!</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<h2 class="bg-danger text-center answerConfirmation">Wrong Anser. The correct answer was... </h2>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center summary">
+			<h1>Correct Answers: <span id="wins"></span></h1>
+			<h1>Wrong Answers: <span id="losses"></span></h1>
+			<h1>Unanswered: <span id="unanswered"></span></h1>
+			<h1>Total Points Earned: <span id = "totalPointsEarned"></span></h1>
+			<h3>Play Again</h3>
+		</div>
+	</div>
+
+
+<h2 id="inBetween"></h2>
+
+
+	<div class="answer">
+		<img class="answer" id="answerPic" src="" style="height:300px; width:300px;">
+		<h4><span class="answer" id="answerInfo" style="height:300px; width:300px;"></span></h4>
+	</div>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
