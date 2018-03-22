@@ -27,10 +27,9 @@ var i = 0;
 var guess = 1;
 var madeGuess = 0;
 var time = 1500;
-var timeBetween = 7;
+var timeBetween = 10;
 var wins = 0;
 var losses = 0;
-var unanswered = 0;
 var timerExp = 0;
 var pointsEnabled = 0;
 var points = 0;
@@ -46,10 +45,10 @@ $(".pointsArea").hide();
 $("#geography").click(function() {
 	$("body").css("background-image","url('images/background.jpg')");
 	$(".begin").fadeIn();
-	$(".chooseGame").fadeOut("slow");
+	$(".chooseGame")
 	$(".summary").hide();
 	$(".answer").hide();
-	$("#timer").fadeIn("slow");
+	$("#timer").fadeIn();
 	$("#pointsMode").hide();
 	i = 20;
 	nextQuestion();
@@ -109,7 +108,7 @@ function nextQuestion() {
 			time = 1500;
 			timeBetween = 7;
 			$("#pointsEarned").hide();
-			$(".answerConfirmation").fadeOut();
+			$(".answerConfirmation")
 			$(".btn-info").hide();
 			$(".btn-info").css("background-color", "pink");
 			$(".btn-info").fadeIn();
@@ -140,7 +139,7 @@ function checkAnswer() {
 	clearInterval(intervalId);
 	if (pointsEnabled === 0) { $("#pointsEarned").hide(); }
 	else { $("#pointsEarned").show(); }
-	if (guess === answers[i]) {	$(".bg-success").fadeIn();
+	if (guess === answers[i])
 								$("#pointsEarned").css("color", "greenyellow");
 								$("#pointsEarned").html("You earned " + time + " points for that question.");
 								totalPointsEarned = totalPointsEarned + time;
