@@ -1,98 +1,37 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>TOTALLY TRIVIA</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="css/style.css"
+    <meta charset="utf-8">
+    <title>Total Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
+
 <body>
+  <div id="wrapper">
+    <div id="gradient">
+      <div class="container">
+        <section class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="jumbotron animated zoomIn">
+              <h1>Geography Trivia!</h1>
+              <h5 class="timeRemaining"></h5>
+              <h3 class="question questionHeader"></h3>
+              <div class="answers"></div>
+              <p class="start-button text-center animated zoomInDown">
+                <a class="btn btn-primary btn-lg startButton animated pulse infinite" href="#" role="button">
+                  <span class="glyphicon glyphicon-off"></span>
+                </a>
+              </p>
+            </div>
 
-
-<div class="container">
-	<div class="row">
-		<h1><div class="col-lg-12 text-center chooseGame"><p>Click on Geography to receive trivia questions about world Geography </p></h4>
-		</div></h1>
-	</div>
-<div class="container">
-	<div class="row">
-		<button class="col-lg-12 col-md-12 col-sm-12 btn btn-danger" id="pointsMode">Score</button>
-		<button class="col-lg-12 col-md-12 col-sm-12 btn btn-primary chooseGame" id="geography">Geography</button>
-	</div>
+        </section>
+    </div>
+  </div>
 </div>
 
-<h3 class="pointsArea" id="pointsActivated">Points Score
-<span class="pointsArea" id="pointsEarned"></h3>
-
-<div class="col-lg-2 text-center" id="timer"></div>
-
-	<div class="row">
-		<div class="col-lg-10 col-lg-offset-1 text-center begin"><h3><span id="questionArea"></span></h3>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
-			<button class="btn btn-info" id="boxOne"></button>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
-			<button class="btn btn-info" id="boxTwo"></button>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
-			<button class="btn btn-info" id="boxThree"></button>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 text-center begin">
-			<button class="btn btn-info" id="boxFour"></button>
-		</div>
-	</div>
-
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-			<h1 class="bg-success text-center answerConfirmation">Correct Answer!</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-			<h2 class="bg-danger text-center answerConfirmation">Wrong Anser. The correct answer was... </h2>
-		</div>
-	</div>
-
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 text-center summary">
-			<h1>Correct Answers: <span id="wins"></span></h1>
-			<h1>Wrong Answers: <span id="losses"></span></h1>
-			<h1>Unanswered: <span id="unanswered"></span></h1>
-			<h1>Total Points Earned: <span id = "totalPointsEarned"></span></h1>
-			<h3>Play Again</h3>
-		</div>
-	</div>
-
-
-<h2 id="inBetween"></h2>
-
-
-	<div class="answer">
-		<img class="answer" id="answerPic" src="" style="height:300px; width:300px;">
-		<h4><span class="answer" id="answerInfo" style="height:300px; width:300px;"></span></h4>
-	</div>
-</div>
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-
-	<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
