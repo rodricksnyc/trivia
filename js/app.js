@@ -73,7 +73,7 @@ $(document).ready(function () {
                 correctAnswer();
             } else {
                 answered = true;
-                $('.question').text("You chose: " + triviaGame[indexQandA].answer[id] + "but the correct answer is: " + triviaGame[indexQandA].answer[correct]);
+                $('.question').text("You chose: " + triviaGame[indexQandA].answer[id] + " but the correct answer is: " + triviaGame[indexQandA].answer[correct]);
                 incorrectAnswer();
             }
         });
